@@ -2,6 +2,7 @@
 /validacion.example/obj/
 
 /products.api/bin/
+/products.api/.containers/
 /products.api/obj/
 /products.api/.vs/
 /products.api/products.api/bin/
