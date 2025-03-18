@@ -7,3 +7,10 @@
 /products.api/.vs/
 /products.api/products.api/bin/
 /products.api/products.api/obj/
+
+/products.api.serilog/bin/
+/products.api.serilog/.containers/
+/products.api.serilog/obj/
+/products.api.serilog/.vs/
+/products.api.serilog/products.api/bin/
+/products.api.serilog/products.api/obj/
