@@ -16,5 +16,5 @@
 /products.api.serilog/products.api/obj/
 
 /errorHandling.api/.vs/
-#/errorHandling.api/bin/
-#/errorHandling.api/obj/
+/errorHandling.api/bin/
+/errorHandling.api/obj/
