@@ -1,0 +1,15 @@
+@errorHandling.api_HostAddress = http://localhost:5049
+
+GET {{errorHandling.api_HostAddress}}/product/
+Accept: application/json
+
+
+### Crear un producto
+POST {{errorHandling.api_HostAddress}}/product
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "",
+  "name": "Teclado mecánico"
+}

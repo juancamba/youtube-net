@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "g8r4mZ19BXxJLylfjBJVnEnu8COO0RHoJKO2wSAWh2Q=",
+  "Source": "errorHandling.api",
+  "BasePath": "_content/errorHandling.api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
