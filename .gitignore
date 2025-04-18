@@ -26,3 +26,7 @@
 /KafkaExample/ConsumerKafka/obj/
 /KafkaExample/Crm.Kafka/bin/
 /KafkaExample/Crm.Kafka/obj/
+
+
+/cqrs.api/bin/
+/cqrs.api/obj/
