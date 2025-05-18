@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  products.api:
+    image: ${DOCKER_REGISTRY-}productsapi
+    build:
+      context: .
+      dockerfile: products.api/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ASPNETCORE_HTTPS_PORTS=8081
+    ports:
+      - "8080"
+      - "8081"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+  products-db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: Products.Db
+    volumes:
+        - ./.containers/database:/var/opt/mssql/data
+    ports:
+        - "1433:1433"
+    environment:
+        ACCEPT_EULA: "Y"
+        SA_PASSWORD: "ProductsDb123"
+        "ConnectionStrings_Database": "Server=products-db;Database=productsdb;User=sa;Password=ProductsDb123;TrustServerCertificate=True"

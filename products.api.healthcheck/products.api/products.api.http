@@ -1,0 +1,24 @@
+@products.api_HostAddress = http://localhost:5201
+
+GET {{products.api_HostAddress}}/api/Products/
+Accept: application/json
+
+###
+
+// ...existing code...
+
+POST {{products.api_HostAddress}}/api/Products/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Nuevo Producto 2",
+  "price": 1100.0,
+  "description": "Descripción del producto 2"
+}
+
+###
+
+
+GET {{products.api_HostAddress}}/health
+Accept: application/json

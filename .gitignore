@@ -30,3 +30,7 @@
 
 /cqrs.api/bin/
 /cqrs.api/obj/
+
+
+/products.api.healthcheck/products.api/bin/
+/products.api.healthcheck/products.api/obj/
