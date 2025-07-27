@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "CambaCodeLabs",
+  "classifications": [ "Hexagonal", "Arquitectura", "Clean Architecture" ],
+  "identity": "Hexagonal.CambaCodeLabs",
+  "name": "Arquetipo Arquitectura Hexagonal .NET",
+  "shortName": "cambacodelabs",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "MyApp",
+  "preferNameDirectory": true
+}

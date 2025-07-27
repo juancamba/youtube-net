@@ -1,9 +1,4 @@
 # youtube-net
-Sigueme en [youtube](https://www.youtube.com/@CambaCodeLabs/)
-
-## Health Checks
-Ejemplo de health checks, base de datos, integración con terceros y AspNetCore.HealthChecks.Ui.Clien
-[Ir a products.api.healthcheck](products.api.healthcheck/)
 
 ## Linux
 [Linux](Linux/)
@@ -23,3 +18,7 @@ Ejemplo de health checks, base de datos, integración con terceros y AspNetCore.
 
 ## Ejemplo de Fluent Validations
 [validacion.example](validacion.example/)
+
+## Ejemplo Templates
+Como crear un arquetipo o template boilerplate en .Net 9
+[arquetipo-net](arquetipo-net/)
