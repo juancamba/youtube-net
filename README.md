@@ -3,6 +3,8 @@
 ## Linux
 [Linux](Linux/)
 
+## Curso Bash de cero a experto
+[Curso Bash](curso-bash/)
 
 ## Ejemplo de implementación de Apache Kafka en .Net 
 [KafkaExample](KafkaExample/)
