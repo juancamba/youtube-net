@@ -24,3 +24,8 @@
 ## Ejemplo Templates
 Como crear un arquetipo o template boilerplate en .Net 9
 [arquetipo-net](arquetipo-net/)
+
+
+## Api Con IA
+Integro un api con IA para clasificar tikets y entender lenguaje humano
+[api-with-ia](ApiWithIA/)
