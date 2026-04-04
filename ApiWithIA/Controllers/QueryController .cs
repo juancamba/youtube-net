@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApiWithIA.Helpers;
 using ApiWithIA.Models;
 using ApiWithIA.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -33,8 +34,8 @@ namespace ApiWithIA.Controllers
                 return BadRequest("No se pudo interpretar la pregunta.");
 
             
-            DateTime fechaInicio = DateTime.Parse(intent.FechaInicio);
-            DateTime fechaFin = DateTime.Parse(intent.FechaFin);
+            DateTime? fechaInicio = intent.FechaInicio != null ? DateTime.Parse(intent.FechaInicio) : null;
+            DateTime? fechaFin =  intent.FechaInicio != null ? DateTime.Parse(intent.FechaFin) : null;
 
             // Filtrar tickets usando TicketService
             var tickets = await _ticketService.GetTicketsAsync(intent.Categoria, fechaInicio, fechaFin);
@@ -47,7 +48,9 @@ namespace ApiWithIA.Controllers
             // Responder
             var respuesta = new
             {
-                mensaje = $"Has gastado {total:C} en {intent.Categoria ?? "todas las categorías"} del {fechaInicio:MMMM yyyy} al {fechaFin:MMMM yyyy}"
+                
+                 mensaje = MensajeHelper.ConstruirMensaje(total, intent.Categoria, fechaInicio, fechaFin)
+                //mensaje = $"Has gastado {total:C} en {intent.Categoria ?? "todas las categorías"} del {fechaInicio:MMMM yyyy} al {fechaFin:MMMM yyyy}"
             };
 
             return Ok(respuesta);
