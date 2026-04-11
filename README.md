@@ -29,3 +29,8 @@ Como crear un arquetipo o template boilerplate en .Net 9
 ## Api Con IA
 Integro un api con IA para clasificar tikets y entender lenguaje humano
 [api-with-ia](ApiWithIA/)
+
+## Patrón SAGA con orquestador y Masstransit
+Implementar el PATRÓN SAGA con orquestador en .Net. 👉 TRANSACCIONES en Microservicios
+Oculto
+[SagaMassTransit](SagaMassTransit/)
