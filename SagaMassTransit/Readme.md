@@ -1,7 +1,9 @@
 
 # Patrón Saga con Masstransit
 Ejemplo de patrón SAGA en .Net con MassTransit. 
-Se basa en los siguientes mircroservicios ![Logo del proyecto](microservices.png)
+Se basa en los siguientes mircroservicios y RabbitMQ para el envio de eventos entre Microservicios.
+
+![Logo del proyecto](microservices.png)
 
 
 # Diccionario
