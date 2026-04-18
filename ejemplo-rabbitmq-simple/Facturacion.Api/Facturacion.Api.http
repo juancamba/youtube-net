@@ -1,0 +1,6 @@
+@Facturacion.Api_HostAddress = http://localhost:5271
+
+POST  {{Facturacion.Api_HostAddress}}/factura/crear
+Accept: application/json
+
+###
