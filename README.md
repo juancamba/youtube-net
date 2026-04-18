@@ -34,3 +34,10 @@ Integro un api con IA para clasificar tikets y entender lenguaje humano
 Implementar el PATRÓN SAGA con orquestador en .Net. 👉 TRANSACCIONES en Microservicios
 Oculto
 [SagaMassTransit](SagaMassTransit/)
+
+## RabbitMq desde Cero
+Ejemplo de RabbitMQ desde cero
+[Ejemplo RabbitMQ Simple](ejemplo-rabbitmq-simple/)
+
+[Ejemplo RabbitMQ Avanzado](ejemplo-rabbitmq-avanzado/)
+
