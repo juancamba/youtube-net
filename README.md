@@ -42,3 +42,9 @@ Ejemplo de RabbitMQ desde cero
 
 [Ejemplo RabbitMQ Avanzado](ejemplo-rabbitmq-avanzado/)
 
+
+
+## Implementación de ApiGateway con YARP en .Net
+ En este video aprenderás a implementar un API Gateway con YARP en .NET
+
+[ApiGateway con YARP](shop-api-with-gateway/)

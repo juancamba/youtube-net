@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+  gateway.api:
+    build:
+      context: ./Gateway.Api
+    ports:
+      - "5000:8080"
+    depends_on:
+      - users.api
+      - orders.api
+      - catalog.api
+
+  users.api:
+    build:
+      context: ./Users.Api
+    ports:
+      - "5001:8080"
+
+  orders.api:
+    build:
+      context: ./Orders.Api
+    ports:
+      - "5002:8080"
+
+  catalog.api:
+    build:
+      context: ./Catalog.Api
+    ports:
+      - "5003:8080"
